@@ -23,11 +23,11 @@ var romanToInt = function(s) {
     
     for (let i = 0; i < s.length; i++){
         if (i < s.length - 1 && symbols[s[i] + s[i+1]]){
-            sum += symbols[s[i] + s[i+1]]
+            sum += symbols[s[i] + s[i+1]];
             i++; // since 2 chars
         }
         else{
-            sum += symbols[s[i]]
+            sum += symbols[s[i]];
         }
     };
     return sum;
